@@ -423,4 +423,12 @@ public class BackstageController {
 		log.info("——————进入查询手机的控制类——————");
 		return backstageService.selectPhone();
 	}
+
+	@ResponseBody
+	@RequestMapping("/selectPhone/{id}")
+	private Result selectPhoneById(@PathVariable Integer id) {
+		log.info("——————进入通过id查询手机的控制类——————");
+		log.info("接收参数为id="+id);
+		return backstageService.selectPhoneById(id);
+	}
 }

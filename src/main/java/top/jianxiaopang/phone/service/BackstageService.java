@@ -140,4 +140,6 @@ public interface BackstageService {
 	public Result updatePhone(Phone phone);
 
 	public Result selectPhone();
+
+	public Result selectPhoneById(Integer id);
 }

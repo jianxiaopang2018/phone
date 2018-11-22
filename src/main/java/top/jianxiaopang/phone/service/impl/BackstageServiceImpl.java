@@ -20,7 +20,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertBatteryCapacity(String scope) {
 		Integer i = backstageDao.insertBatteryCapacity(scope);
-		if(i<0) {
+		if (i < 0) {
 			log.info("插入电池容量失败");
 			return Result.message(400, "插入电池容量失败");
 		}
@@ -31,7 +31,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deleteBatteryCapacity(Integer id) {
 		Integer i = backstageDao.deleteBatteryCapacity(id);
-		if(i<0) {
+		if (i < 0) {
 			log.info("删除电池容量失败");
 			return Result.message(400, "删除电池容量失败");
 		}
@@ -42,7 +42,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updateBatteryCapacity(BatteryCapacity batteryCapacity) {
 		Integer i = backstageDao.updateBatteryCapacity(batteryCapacity);
-		if(i<0) {
+		if (i < 0) {
 			log.info("更新电池容量失败");
 			return Result.message(400, "更新电池容量失败");
 		}
@@ -59,7 +59,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertBodyMaterial(String name) {
 		Integer i = backstageDao.insertBodyMaterial(name);
-		if(i<0) {
+		if (i < 0) {
 			log.info("插入机身材质失败");
 			return Result.message(400, "插入机身材质失败");
 		}
@@ -70,7 +70,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deleteBodyMaterial(Integer id) {
 		Integer i = backstageDao.deleteBodyMaterial(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除机身材质成功");
 			return Result.message(400, "删除机身材质成功");
 		}
@@ -81,7 +81,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updateBodyMaterial(BodyMaterial bodyMaterial) {
 		Integer i = backstageDao.updateBodyMaterial(bodyMaterial);
-		if(i<0) {
+		if (i < 0) {
 			log.info("更新机身材质失败");
 			return Result.message(400, "更新机身材质失败");
 		}
@@ -98,7 +98,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertBrand(String name) {
 		Integer i = backstageDao.insertBrand(name);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("插入品牌失败");
 			return Result.message(400, "插入品牌失败");
 		}
@@ -109,7 +109,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deleteBrand(Integer id) {
 		Integer i = backstageDao.deleteBrand(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除品牌失败");
 			return Result.message(400, "删除品牌失败");
 		}
@@ -120,7 +120,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updateBrand(Brand brand) {
 		Integer i = backstageDao.updateBrand(brand);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("更新品牌失败");
 			return Result.message(400, "更新品牌失败");
 		}
@@ -137,7 +137,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertCpu(Cpu cpu) {
 		Integer i = backstageDao.insertCpu(cpu);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("插入cpu信息失败");
 			return Result.message(400, "插入cpu信息失败");
 		}
@@ -148,7 +148,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deleteCpu(Integer id) {
 		Integer i = backstageDao.deleteCpu(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除cpu信息失败");
 			return Result.message(400, "删除cpu信息失败");
 		}
@@ -159,7 +159,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updateCpu(Cpu cpu) {
 		Integer i = backstageDao.updateCpu(cpu);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("更新cpu信息失败");
 			return Result.message(400, "更新cpu信息失败");
 		}
@@ -176,7 +176,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertFrontCamera(FrontCamera frontCamera) {
 		Integer i = backstageDao.insertFrontCamera(frontCamera);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("插入前摄像头信息失败");
 			return Result.message(400, "插入前摄像头信息失败");
 		}
@@ -187,7 +187,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deleteFrontCamera(Integer id) {
 		Integer i = backstageDao.deleteFrontCamera(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除前摄像头信息失败");
 			return Result.message(400, "删除前摄像头信息失败");
 		}
@@ -198,7 +198,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updateFrontCamera(FrontCamera frontCamera) {
 		Integer i = backstageDao.updateFrontCamera(frontCamera);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("更新前摄像头信息失败");
 			return Result.message(400, "更新前摄像头信息失败");
 		}
@@ -215,7 +215,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertMicrousb(Microusb microusb) {
 		Integer i = backstageDao.insertMicrousb(microusb);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("插入充电接口信息失败");
 			return Result.message(400, "插入充电接口信息失败");
 		}
@@ -226,7 +226,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deleteMicrousb(Integer id) {
 		Integer i = backstageDao.deleteMicrousb(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除充电接口信息失败");
 			return Result.message(400, "删除充电接口信息失败");
 		}
@@ -237,7 +237,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updateMicrousb(Microusb microusb) {
 		Integer i = backstageDao.updateMicrousb(microusb);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("更新充电接口信息失败");
 			return Result.message(400, "更新充电接口信息失败");
 		}
@@ -254,7 +254,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertPrice(String scope) {
 		Integer i = backstageDao.insertPrice(scope);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("插入价值范围失败");
 			return Result.message(400, "插入价值范围失败");
 		}
@@ -265,7 +265,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deletePrice(Integer id) {
 		Integer i = backstageDao.deletePrice(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除价值范围成功");
 			return Result.message(400, "删除价值范围成功");
 		}
@@ -276,7 +276,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updatePrice(Price price) {
 		Integer i = backstageDao.updatePrice(price);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("更新价值范围失败");
 			return Result.message(400, "更新价值范围失败");
 		}
@@ -293,7 +293,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertRamAndRom(RamAndRom ramAndRom) {
 		Integer i = backstageDao.insertRamAndRom(ramAndRom);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("插入运存内存信息失败");
 			return Result.message(400, "插入运存内存信息失败");
 		}
@@ -304,7 +304,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deleteRamAndRom(Integer id) {
 		Integer i = backstageDao.deleteRamAndRom(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除运存内存信息失败");
 			return Result.message(400, "删除运存内存信息失败");
 		}
@@ -315,7 +315,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updateRamAndRom(RamAndRom ramAndRom) {
 		Integer i = backstageDao.updateRamAndRom(ramAndRom);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("更新运存内存信息失败");
 			return Result.message(400, "更新运存内存信息失败");
 		}
@@ -332,7 +332,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertRearCamera(RearCamera rearCamera) {
 		Integer i = backstageDao.insertRearCamera(rearCamera);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("插入后置摄像头信息失败");
 			return Result.message(400, "插入后置摄像头信息失败");
 		}
@@ -343,7 +343,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deleteRearCamera(Integer id) {
 		Integer i = backstageDao.deleteRearCamera(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除后置摄像头信息失败");
 			return Result.message(400, "删除后置摄像头信息失败");
 		}
@@ -354,7 +354,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updateRearCamera(RearCamera rearCamera) {
 		Integer i = backstageDao.updateRearCamera(rearCamera);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("更新后置摄像头信息失败");
 			return Result.message(400, "更新后置摄像头信息失败");
 		}
@@ -371,7 +371,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertResolution(Resolution resolution) {
 		Integer i = backstageDao.insertResolution(resolution);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("插入屏幕分辨率信息失败");
 			return Result.message(400, "插入屏幕分辨率信息失败");
 		}
@@ -382,7 +382,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deleteResolution(Integer id) {
 		Integer i = backstageDao.deleteResolution(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除屏幕分辨率信息失败");
 			return Result.message(400, "删除屏幕分辨率信息失败");
 		}
@@ -393,7 +393,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updateResolution(Resolution resolution) {
 		Integer i = backstageDao.updateResolution(resolution);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("更新屏幕分辨率信息失败");
 			return Result.message(400, "更新屏幕分辨率信息失败");
 		}
@@ -410,7 +410,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertScreenMaterial(String name) {
 		Integer i = backstageDao.insertScreenMaterial(name);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("插入屏幕材质失败");
 			return Result.message(400, "插入屏幕材质失败");
 		}
@@ -421,7 +421,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deleteScreenMaterial(Integer id) {
 		Integer i = backstageDao.deleteScreenMaterial(id);
-		if(i <0) {
+		if (i < 0) {
 			log.info("删除屏幕材质失败");
 			return Result.message(400, "删除屏幕材质失败");
 		}
@@ -432,7 +432,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updateScreenMaterial(ScreenMaterial screenMaterial) {
 		Integer i = backstageDao.updateScreenMaterial(screenMaterial);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("更新机身材质失败");
 			return Result.message(400, "更新机身材质失败");
 		}
@@ -449,7 +449,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertScreenSize(String scope) {
 		Integer i = backstageDao.insertScreenSize(scope);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("插入屏幕大小失败");
 			return Result.message(400, "插入屏幕大小失败");
 		}
@@ -460,7 +460,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deleteScreenSize(Integer id) {
 		Integer i = backstageDao.deleteScreenSize(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除屏幕大小失败");
 			return Result.message(400, "删除屏幕大小失败");
 		}
@@ -471,7 +471,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updateScreenSize(ScreenSize screenSize) {
 		Integer i = backstageDao.updateScreenSize(screenSize);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("更新屏幕大小失败");
 			return Result.message(400, "更新屏幕大小失败");
 		}
@@ -488,7 +488,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result insertPhone(Phone phone) {
 		Integer i = backstageDao.insertPhone(phone);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("插入手机信息失败");
 			return Result.message(400, "插入手机信息失败");
 		}
@@ -505,13 +505,13 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result deletePhone(Integer id) {
 		Integer i = backstageDao.deletePhone(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除手机信息失败");
 			return Result.message(400, "删除手机信息失败");
 		}
 		log.info("删除关联表通过手机id");
 		i = backstageDao.deleteRelationByPhoneId(id);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("删除手机关联信息失败");
 			return Result.message(400, "删除手机关联信息失败");
 		}
@@ -522,7 +522,7 @@ public class BackstageServiceImpl implements BackstageService {
 	@Override
 	public Result updatePhone(Phone phone) {
 		Integer i = backstageDao.updatePhone(phone);
-		if(i < 0) {
+		if (i < 0) {
 			log.info("更新手机信息失败");
 			return Result.message(400, "更新手机信息失败");
 		}
@@ -541,11 +541,22 @@ public class BackstageServiceImpl implements BackstageService {
 		log.info("查询手机信息");
 		List<ReturnPhone> returnPhones = backstageDao.selectPhone();
 		log.info("查询手机信息对应的关联信息");
-		for(ReturnPhone returnPhone : returnPhones) {
+		for (ReturnPhone returnPhone : returnPhones) {
 			List<ReturnRelation> returnRelations = backstageDao.selectReturnRelation(returnPhone.getId());
 			returnPhone.setReturnRelations(returnRelations);
 		}
-		log.info("更新电池容量成功");
+		log.info("查询手机信息成功");
 		return Result.success(returnPhones);
+	}
+
+	@Override
+	public Result selectPhoneById(Integer id) {
+		log.info("通过id查询手机信息");
+		ReturnPhone returnPhone = backstageDao.selectPhoneById(id);
+		log.info("查询手机信息对应的关联信息");
+		List<ReturnRelation> returnRelations = backstageDao.selectReturnRelation(returnPhone.getId());
+		returnPhone.setReturnRelations(returnRelations);
+		log.info("查询手机信息成功");
+		return Result.success(returnPhone);
 	}
 }

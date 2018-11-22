@@ -140,4 +140,6 @@ public interface BackstageDao {
 	public List<ReturnPhone> selectPhone();
 
 	public List<ReturnRelation> selectReturnRelation(Integer phoneId);
+
+	public ReturnPhone selectPhoneById(Integer id);
 }
