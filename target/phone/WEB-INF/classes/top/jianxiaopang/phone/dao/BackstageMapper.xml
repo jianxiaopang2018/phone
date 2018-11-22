@@ -297,6 +297,7 @@
         cpu_id,
         battery_capacity,
         screen_size,
+        resolution_id,
         screen_material_id,
         front_camera,
         rear_camera,
@@ -314,11 +315,12 @@
         )
         values
         (
-        #{name}
+        #{name},
         #{brandId},
         #{cpuId},
         #{batteryCapacity},
         #{screenSize},
+        #{resolutionId},
         #{screenMaterialId},
         #{frontCamera},
         #{rearCamera},
@@ -365,6 +367,7 @@
         cpu_id = #{cpuId},
         battery_capacity = #{batteryCapacity},
         screen_size = #{screenSize},
+        resolution_id = #{resolutionId},
         screen_material_id = #{screenMaterialId},
         front_camera = #{frontCamera},
         rear_camera = #{rearCamera},

@@ -4,6 +4,7 @@ top\jianxiaopang\phone\pojo\Brand.class
 top\jianxiaopang\phone\pojo\FrontCamera.class
 top\jianxiaopang\phone\dao\BackstageDao.class
 top\jianxiaopang\phone\service\BackstageService.class
+top\jianxiaopang\phone\utils\Utils.class
 top\jianxiaopang\phone\pojo\ReturnPhone.class
 top\jianxiaopang\phone\pojo\ScreenSize.class
 top\jianxiaopang\phone\pojo\Resolution.class

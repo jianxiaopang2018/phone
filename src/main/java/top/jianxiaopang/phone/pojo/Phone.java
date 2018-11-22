@@ -9,6 +9,7 @@ public class Phone {
 	private int cpuId;
 	private int batteryCapacity;
 	private Float screenSize;
+	private int resolutionId;
 	private int screenMaterialId;
 	private String frontCamera;
 	private String rearCamera;
@@ -24,6 +25,14 @@ public class Phone {
 	private String imageUrl;
 	private String detailUrl;
 	private List<Relation> relations;
+
+	public int getResolutionId() {
+		return resolutionId;
+	}
+
+	public void setResolutionId(int resolutionId) {
+		this.resolutionId = resolutionId;
+	}
 
 	public int getId() {
 		return id;

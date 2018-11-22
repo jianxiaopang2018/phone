@@ -9,6 +9,7 @@ public class ReturnPhone {
 	private String cpu;
 	private int batteryCapacity;
 	private Float screenSize;
+	private String resolution;
 	private String screenMaterial;
 	private String frontCamera;
 	private String rearCamera;
@@ -24,6 +25,14 @@ public class ReturnPhone {
 	private String imageUrl;
 	private String detailUrl;
 	private List<ReturnRelation> returnRelations;
+
+	public String getResolution() {
+		return resolution;
+	}
+
+	public void setResolution(String resolution) {
+		this.resolution = resolution;
+	}
 
 	public int getId() {
 		return id;
