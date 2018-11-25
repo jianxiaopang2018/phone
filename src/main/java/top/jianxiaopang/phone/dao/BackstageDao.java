@@ -1,5 +1,6 @@
 package top.jianxiaopang.phone.dao;
 
+import org.apache.ibatis.annotations.Param;
 import top.jianxiaopang.phone.pojo.*;
 
 import java.util.List;
@@ -137,9 +138,11 @@ public interface BackstageDao {
 
 	public Integer updateRelation(Relation relation);
 
-	public List<ReturnPhone> selectPhone();
+	public List<ReturnPhone> selectPhone(@Param("page") Integer page);
 
 	public List<ReturnRelation> selectReturnRelation(Integer phoneId);
 
 	public ReturnPhone selectPhoneById(Integer id);
+
+	public Integer selectPhoneCount();
 }

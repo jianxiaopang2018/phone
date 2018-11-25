@@ -5,10 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import top.jianxiaopang.phone.pojo.*;
 import top.jianxiaopang.phone.service.BackstageService;
 
@@ -24,7 +21,7 @@ public class BackstageController {
 	@RequestMapping("/insertBatteryCapacity")
 	private Result insertBatteryCapacity(@RequestBody BatteryCapacity batteryCapacity) {
 		log.info("——————进入插入电池容量的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(batteryCapacity));
+		log.info("接收参数为"+JSON.toJSONString(batteryCapacity));
 		return backstageService.insertBatteryCapacity(batteryCapacity.getScope());
 	}
 
@@ -33,7 +30,7 @@ public class BackstageController {
 	@RequestMapping("/deleteBatteryCapacity")
 	private Result deleteBatteryCapacity(@RequestBody Id id) {
 		log.info("——————进入删除电池容量的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deleteBatteryCapacity(id.getId());
 	}
 
@@ -41,7 +38,7 @@ public class BackstageController {
 	@RequestMapping("/updateBatteryCapacity")
 	private Result updateBatteryCapacity(@RequestBody BatteryCapacity batteryCapacity) {
 		log.info("——————进入更新电池容量的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(batteryCapacity));
+		log.info("接收参数为"+JSON.toJSONString(batteryCapacity));
 		return backstageService.updateBatteryCapacity(batteryCapacity);
 	}
 
@@ -56,7 +53,7 @@ public class BackstageController {
 	@RequestMapping("/insertBodyMaterial")
 	private Result insertBodyMaterial(@RequestBody BodyMaterial bodyMaterial) {
 		log.info("——————进入插入机身材质的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(bodyMaterial));
+		log.info("接收参数为"+JSON.toJSONString(bodyMaterial));
 		return backstageService.insertBodyMaterial(bodyMaterial.getName());
 	}
 
@@ -64,7 +61,7 @@ public class BackstageController {
 	@RequestMapping("/deleteBodyMaterial")
 	private Result deleteBodyMaterial(@RequestBody Id id) {
 		log.info("——————进入删除机身材质的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deleteBodyMaterial(id.getId());
 	}
 
@@ -72,7 +69,7 @@ public class BackstageController {
 	@RequestMapping("/updateBodyMaterial")
 	private Result updateBodyMaterial(@RequestBody BodyMaterial bodyMaterial) {
 		log.info("——————进入更新机身材质的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(bodyMaterial));
+		log.info("接收参数为"+JSON.toJSONString(bodyMaterial));
 		return backstageService.updateBodyMaterial(bodyMaterial);
 	}
 
@@ -87,7 +84,7 @@ public class BackstageController {
 	@RequestMapping("/insertBrand")
 	private Result insertBrand(@RequestBody Brand brand) {
 		log.info("——————进入插入品牌的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(brand));
+		log.info("接收参数为"+JSON.toJSONString(brand));
 		return backstageService.insertBrand(brand.getName());
 	}
 
@@ -95,7 +92,7 @@ public class BackstageController {
 	@RequestMapping("/deleteBrand")
 	private Result deleteBrand(@RequestBody Id id) {
 		log.info("——————进入删除品牌的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deleteBrand(id.getId());
 	}
 
@@ -103,7 +100,7 @@ public class BackstageController {
 	@RequestMapping("/updateBrand")
 	private Result updateBrand(@RequestBody Brand brand) {
 		log.info("——————进入更新品牌的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(brand));
+		log.info("接收参数为"+JSON.toJSONString(brand));
 		return backstageService.updateBrand(brand);
 	}
 
@@ -118,7 +115,7 @@ public class BackstageController {
 	@RequestMapping("/insertCpu")
 	private Result insertCpu(@RequestBody Cpu cpu) {
 		log.info("——————进入插入cpu的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(cpu));
+		log.info("接收参数为"+JSON.toJSONString(cpu));
 		return backstageService.insertCpu(cpu);
 	}
 
@@ -126,7 +123,7 @@ public class BackstageController {
 	@RequestMapping("/deleteCpu")
 	private Result deleteCpu(@RequestBody Id id) {
 		log.info("——————进入删除cpu的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deleteCpu(id.getId());
 	}
 
@@ -134,7 +131,7 @@ public class BackstageController {
 	@RequestMapping("/updateCpu")
 	private Result updateCpu(@RequestBody Cpu cpu) {
 		log.info("——————进入更新cpu的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(cpu));
+		log.info("接收参数为"+JSON.toJSONString(cpu));
 		return backstageService.updateCpu(cpu);
 	}
 
@@ -149,7 +146,7 @@ public class BackstageController {
 	@RequestMapping("/insertFrontCamera")
 	private Result insertFrontCamera(@RequestBody FrontCamera frontCamera) {
 		log.info("——————进入插入前置摄像头的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(frontCamera));
+		log.info("接收参数为"+JSON.toJSONString(frontCamera));
 		return backstageService.insertFrontCamera(frontCamera);
 	}
 
@@ -157,7 +154,7 @@ public class BackstageController {
 	@RequestMapping("/deleteFrontCamera")
 	private Result deleteFrontCamera(@RequestBody Id id) {
 		log.info("——————进入删除前置摄像头的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deleteFrontCamera(id.getId());
 	}
 
@@ -165,7 +162,7 @@ public class BackstageController {
 	@RequestMapping("/updateFrontCamera")
 	private Result updateFrontCamera(@RequestBody FrontCamera frontCamera) {
 		log.info("——————进入更新前置摄像头的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(frontCamera));
+		log.info("接收参数为"+JSON.toJSONString(frontCamera));
 		return backstageService.updateFrontCamera(frontCamera);
 	}
 
@@ -180,7 +177,7 @@ public class BackstageController {
 	@RequestMapping("/insertMicrousb")
 	private Result insertMicrousb(@RequestBody Microusb microusb) {
 		log.info("——————进入插入充电口的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(microusb));
+		log.info("接收参数为"+JSON.toJSONString(microusb));
 		return backstageService.insertMicrousb(microusb);
 	}
 
@@ -188,7 +185,7 @@ public class BackstageController {
 	@RequestMapping("/deleteMicrousb")
 	private Result deleteMicrousb(@RequestBody Id id) {
 		log.info("——————进入删除充电口的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deleteMicrousb(id.getId());
 	}
 
@@ -196,7 +193,7 @@ public class BackstageController {
 	@RequestMapping("/updateMicrousb")
 	private Result updateMicrousb(@RequestBody Microusb microusb) {
 		log.info("——————进入更新充电口的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(microusb));
+		log.info("接收参数为"+JSON.toJSONString(microusb));
 		return backstageService.updateMicrousb(microusb);
 	}
 
@@ -211,7 +208,7 @@ public class BackstageController {
 	@RequestMapping("/insertPrice")
 	private Result insertPrice(@RequestBody Price price) {
 		log.info("——————进入插入价格的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(price));
+		log.info("接收参数为"+JSON.toJSONString(price));
 		return backstageService.insertPrice(price.getScope());
 	}
 
@@ -219,7 +216,7 @@ public class BackstageController {
 	@RequestMapping("/deletePrice")
 	private Result deletePrice(@RequestBody Id id) {
 		log.info("——————进入删除价格的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deletePrice(id.getId());
 	}
 
@@ -227,7 +224,7 @@ public class BackstageController {
 	@RequestMapping("/updatePrice")
 	private Result updatePrice(@RequestBody Price price) {
 		log.info("——————进入更新价格的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(price));
+		log.info("接收参数为"+JSON.toJSONString(price));
 		return backstageService.updatePrice(price);
 	}
 
@@ -242,7 +239,7 @@ public class BackstageController {
 	@RequestMapping("/insertRamAndRom")
 	private Result insertRamAndRom(@RequestBody RamAndRom ramAndRom) {
 		log.info("——————进入插入运存内存容量的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(ramAndRom));
+		log.info("接收参数为"+JSON.toJSONString(ramAndRom));
 		return backstageService.insertRamAndRom(ramAndRom);
 	}
 
@@ -250,7 +247,7 @@ public class BackstageController {
 	@RequestMapping("/deleteRamAndRom")
 	private Result deleteRamAndRom(@RequestBody Id id) {
 		log.info("——————进入删除运存内存信息的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deleteRamAndRom(id.getId());
 	}
 
@@ -258,7 +255,7 @@ public class BackstageController {
 	@RequestMapping("/updateRamAndRom")
 	private Result updateRamAndRom(@RequestBody RamAndRom ramAndRom) {
 		log.info("——————进入更新运存内存信息的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(ramAndRom));
+		log.info("接收参数为"+JSON.toJSONString(ramAndRom));
 		return backstageService.updateRamAndRom(ramAndRom);
 	}
 
@@ -273,7 +270,7 @@ public class BackstageController {
 	@RequestMapping("/insertRearCamera")
 	private Result insertRearCamera(@RequestBody RearCamera rearCamera) {
 		log.info("——————进入插入后置摄像头的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(rearCamera));
+		log.info("接收参数为"+JSON.toJSONString(rearCamera));
 		return backstageService.insertRearCamera(rearCamera);
 	}
 
@@ -281,7 +278,7 @@ public class BackstageController {
 	@RequestMapping("/deleteRearCamera")
 	private Result deleteRearCamera(@RequestBody Id id) {
 		log.info("——————进入删除后置摄像头的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deleteRearCamera(id.getId());
 	}
 
@@ -289,7 +286,7 @@ public class BackstageController {
 	@RequestMapping("/updateRearCamera")
 	private Result updateRearCamera(@RequestBody RearCamera rearCamera) {
 		log.info("——————进入更新后置摄像头的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(rearCamera));
+		log.info("接收参数为"+JSON.toJSONString(rearCamera));
 		return backstageService.updateRearCamera(rearCamera);
 	}
 
@@ -304,7 +301,7 @@ public class BackstageController {
 	@RequestMapping("/insertResolution")
 	private Result insertResolution(@RequestBody Resolution resolution) {
 		log.info("——————进入插入分辨率的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(resolution));
+		log.info("接收参数为"+JSON.toJSONString(resolution));
 		return backstageService.insertResolution(resolution);
 	}
 
@@ -312,7 +309,7 @@ public class BackstageController {
 	@RequestMapping("/deleteResolution")
 	private Result deleteResolution(@RequestBody Id id) {
 		log.info("——————进入删除分辨率的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deleteResolution(id.getId());
 	}
 
@@ -320,7 +317,7 @@ public class BackstageController {
 	@RequestMapping("/updateResolution")
 	private Result updateResolution(@RequestBody Resolution resolution) {
 		log.info("——————进入更新分辨率的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(resolution));
+		log.info("接收参数为"+JSON.toJSONString(resolution));
 		return backstageService.updateResolution(resolution);
 	}
 
@@ -335,7 +332,7 @@ public class BackstageController {
 	@RequestMapping("/insertScreenMaterial")
 	private Result insertScreenMaterial(@RequestBody ScreenMaterial screenMaterial) {
 		log.info("——————进入插入屏幕材质的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(screenMaterial));
+		log.info("接收参数为"+JSON.toJSONString(screenMaterial));
 		return backstageService.insertScreenMaterial(screenMaterial.getName());
 	}
 
@@ -343,7 +340,7 @@ public class BackstageController {
 	@RequestMapping("/deleteScreenMaterial")
 	private Result deleteScreenMaterial(@RequestBody Id id) {
 		log.info("——————进入删除屏幕材质的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deleteScreenMaterial(id.getId());
 	}
 
@@ -351,7 +348,7 @@ public class BackstageController {
 	@RequestMapping("/updateScreenMaterial")
 	private Result updateScreenMaterial(@RequestBody ScreenMaterial screenMaterial) {
 		log.info("——————进入更新屏幕材质的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(screenMaterial));
+		log.info("接收参数为"+JSON.toJSONString(screenMaterial));
 		return backstageService.updateScreenMaterial(screenMaterial);
 	}
 
@@ -366,7 +363,7 @@ public class BackstageController {
 	@RequestMapping("/insertScreenSize")
 	private Result insertScreenSize(@RequestBody ScreenSize screenSize) {
 		log.info("——————进入插入屏幕范围的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(screenSize));
+		log.info("接收参数为"+JSON.toJSONString(screenSize));
 		return backstageService.insertScreenSize(screenSize.getScope());
 	}
 
@@ -374,7 +371,7 @@ public class BackstageController {
 	@RequestMapping("/deleteScreenSize")
 	private Result deleteScreenSize(@RequestBody Id id) {
 		log.info("——————进入删除屏幕范围的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deleteScreenSize(id.getId());
 	}
 
@@ -382,7 +379,7 @@ public class BackstageController {
 	@RequestMapping("/updateScreenSize")
 	private Result updateScreenSize(@RequestBody ScreenSize screenSize) {
 		log.info("——————进入更新屏幕范围的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(screenSize));
+		log.info("接收参数为"+JSON.toJSONString(screenSize));
 		return backstageService.updateScreenSize(screenSize);
 	}
 
@@ -397,7 +394,7 @@ public class BackstageController {
 	@RequestMapping("/insertPhone")
 	private Result insertPhone(@RequestBody Phone phone) {
 		log.info("——————进入插入手机的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(phone));
+		log.info("接收参数为"+JSON.toJSONString(phone));
 		return backstageService.insertPhone(phone);
 	}
 
@@ -405,7 +402,7 @@ public class BackstageController {
 	@RequestMapping("/deletePhone")
 	private Result deletePhone(@RequestBody Id id) {
 		log.info("——————进入删除手机的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(id));
+		log.info("接收参数为"+JSON.toJSONString(id));
 		return backstageService.deletePhone(id.getId());
 	}
 
@@ -413,15 +410,16 @@ public class BackstageController {
 	@RequestMapping("/updatePhone")
 	private Result updatePhone(@RequestBody Phone phone) {
 		log.info("——————进入更新手机的控制类——————");
-		log.info("接收参数为",JSON.toJSONString(phone));
+		log.info("接收参数为"+JSON.toJSONString(phone));
 		return backstageService.updatePhone(phone);
 	}
 
 	@ResponseBody
 	@RequestMapping("/selectPhone")
-	private Result selectPhone() {
+	private Result selectPhone(@RequestParam Integer page) {
 		log.info("——————进入查询手机的控制类——————");
-		return backstageService.selectPhone();
+		log.info("接收参数为page="+page);
+		return backstageService.selectPhone(page);
 	}
 
 	@ResponseBody

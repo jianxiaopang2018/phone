@@ -23,7 +23,7 @@ public class UserController {
 		log.info("用户信息为",JSON.toJSONString(user));
 		if(user.getUsername().equals("admin") && user.getPassword().equals("admin")) {
 			log.info("登录成功");
-			String token = JWT.sign(user, 1000 * 60 * 30);
+			String token = JWT.sign(user, 1000 * 60 * 30*4);
 			return Result.success(token);
 		}else {
 			log.info("登录失败");

@@ -139,7 +139,7 @@ public interface BackstageService {
 
 	public Result updatePhone(Phone phone);
 
-	public Result selectPhone();
+	public Result selectPhone(Integer page);
 
 	public Result selectPhoneById(Integer id);
 }

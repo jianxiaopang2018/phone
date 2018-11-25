@@ -25,6 +25,60 @@ public class ReturnPhone {
 	private String imageUrl;
 	private String detailUrl;
 	private List<ReturnRelation> returnRelations;
+	private int brandId;
+	private int cpuId;
+	private int resolutionId;
+	private int screenMaterialId;
+	private int bodyMaterialId;
+	private int microusbId;
+
+	public int getBrandId() {
+		return brandId;
+	}
+
+	public void setBrandId(int brandId) {
+		this.brandId = brandId;
+	}
+
+	public int getCpuId() {
+		return cpuId;
+	}
+
+	public void setCpuId(int cpuId) {
+		this.cpuId = cpuId;
+	}
+
+	public int getResolutionId() {
+		return resolutionId;
+	}
+
+	public void setResolutionId(int resolutionId) {
+		this.resolutionId = resolutionId;
+	}
+
+	public int getScreenMaterialId() {
+		return screenMaterialId;
+	}
+
+	public void setScreenMaterialId(int screenMaterialId) {
+		this.screenMaterialId = screenMaterialId;
+	}
+
+	public int getBodyMaterialId() {
+		return bodyMaterialId;
+	}
+
+	public void setBodyMaterialId(int bodyMaterialId) {
+		this.bodyMaterialId = bodyMaterialId;
+	}
+
+	public int getMicrousbId() {
+		return microusbId;
+	}
+
+	public void setMicrousbId(int microusbId) {
+		this.microusbId = microusbId;
+	}
 
 	public String getResolution() {
 		return resolution;

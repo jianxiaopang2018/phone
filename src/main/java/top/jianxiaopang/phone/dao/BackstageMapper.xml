@@ -362,7 +362,7 @@
     <update id="updatePhone">
         UPDATE phone
         SET
-        name = #{name}
+        name = #{name},
         brand_id = #{brandId},
         cpu_id = #{cpuId},
         battery_capacity = #{batteryCapacity},
@@ -411,13 +411,33 @@
             ON p.body_material_id=bm.id
         JOIN microusb m
             ON p.microusb_id=m.id
+        <if test="page != null">
+            limit ${(page-1)*20},20
+        </if>
+    </select>
+
+    <select id="selectPhoneCount" resultType="java.lang.Integer">
+        SELECT count(*)
+        FROM phone p
+        JOIN  brand b
+            ON p.brand_id=b.id
+        JOIN cpu c
+            ON p.cpu_id=c.id
+        JOIN resolution r
+            ON p.resolution_id=r.id
+        JOIN screen_material sm
+            ON p.screen_material_id=sm.id
+        JOIN body_material bm
+            ON p.body_material_id=bm.id
+        JOIN microusb m
+            ON p.microusb_id=m.id
     </select>
 
     <select id="selectPhoneById" resultType="top.jianxiaopang.phone.pojo.ReturnPhone">
-        SELECT p.id,p.name,b.name as brand,c.name as cpu,p.battery_capacity as batteryCapacity,
-               p.screen_size as screenSize,r.size as resolution,sm.name as screenMaterial,
-               p.front_camera as frontCamera,p.rear_camera as rearCamera,bm.name as bodyMaterial,
-               m.name as microusb,p.infrared,p.nfc,p.storage_extension as storageExtension,
+        SELECT p.id,p.name,b.name as brand,b.id as brandId,c.name as cpu,c.id as cpuId,p.battery_capacity as batteryCapacity,
+               p.screen_size as screenSize,r.size as resolution,r.id as resolutionId,sm.name as screenMaterial,sm.id as screenMaterialId,
+               p.front_camera as frontCamera,p.rear_camera as rearCamera,bm.name as bodyMaterial,bm.id as bodyMaterialId,
+               m.name as microusb,m.id as microusbId,p.infrared,p.nfc,p.storage_extension as storageExtension,
                p.quick_charge as quickCharge,p.screen_fingerprin as screenFingerprin,
                p.wireless_charging as wirelessCharging,p.ois,p.image_url as imageUrl,p.detail_url as detailUrl
         FROM phone p
@@ -437,7 +457,7 @@
     </select>
 
     <select id="selectReturnRelation" resultType="top.jianxiaopang.phone.pojo.ReturnRelation">
-        SELECT r.id,rar.size as ramAndRom,r.price,r.phone_id as phoneId
+        SELECT r.id,rar.size as ramAndRom,rar.id as ramAndRomId,r.price,r.phone_id as phoneId
         FROM relation r
         JOIN ram_and_rom rar
             on r.ram_and_rom_id=rar.id

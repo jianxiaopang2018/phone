@@ -8,7 +8,9 @@ import top.jianxiaopang.phone.dao.BackstageDao;
 import top.jianxiaopang.phone.pojo.*;
 import top.jianxiaopang.phone.service.BackstageService;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class BackstageServiceImpl implements BackstageService {
@@ -537,15 +539,26 @@ public class BackstageServiceImpl implements BackstageService {
 	}
 
 	@Override
-	public Result selectPhone() {
+	public Result selectPhone(Integer page) {
 		log.info("查询手机信息");
-		List<ReturnPhone> returnPhones = backstageDao.selectPhone();
+		List<ReturnPhone> returnPhones = backstageDao.selectPhone(page);
 		log.info("查询手机信息对应的关联信息");
 		for (ReturnPhone returnPhone : returnPhones) {
 			List<ReturnRelation> returnRelations = backstageDao.selectReturnRelation(returnPhone.getId());
 			returnPhone.setReturnRelations(returnRelations);
 		}
 		log.info("查询手机信息成功");
+		if(page != null) {
+			Map map = new HashMap<>();
+			map.put("phones",returnPhones);
+			PageBean pb = new PageBean();
+			pb.setCurrentPage(page);
+			pb.setPageSize(20);
+			pb.setTotalCount(backstageDao.selectPhoneCount());
+			pb.setTotalPage((int)(pb.getTotalCount()/20)+1);
+			map.put("pagebean",pb);
+			return Result.success(map);
+		}
 		return Result.success(returnPhones);
 	}
 

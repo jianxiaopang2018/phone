@@ -3,8 +3,17 @@ package top.jianxiaopang.phone.pojo;
 public class ReturnRelation {
 	private int id;
 	private String ramAndRom;
+	private int ramAndRomId;
 	private int price;
 	private int phoneId;
+
+	public int getRamAndRomId() {
+		return ramAndRomId;
+	}
+
+	public void setRamAndRomId(int ramAndRomId) {
+		this.ramAndRomId = ramAndRomId;
+	}
 
 	public int getId() {
 		return id;
