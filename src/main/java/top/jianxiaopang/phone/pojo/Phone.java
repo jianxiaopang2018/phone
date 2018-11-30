@@ -6,7 +6,7 @@ public class Phone {
 	private int id;
 	private String name;
 	private int brandId;
-	private int cpuId;
+	private String cpu;
 	private int batteryCapacity;
 	private Float screenSize;
 	private int resolutionId;
@@ -58,12 +58,12 @@ public class Phone {
 		this.brandId = brandId;
 	}
 
-	public int getCpuId() {
-		return cpuId;
+	public String getCpu() {
+		return cpu;
 	}
 
-	public void setCpuId(int cpuId) {
-		this.cpuId = cpuId;
+	public void setCpu(String cpu) {
+		this.cpu = cpu;
 	}
 
 	public int getBatteryCapacity() {

@@ -553,7 +553,7 @@ public class BackstageServiceImpl implements BackstageService {
 			map.put("phones",returnPhones);
 			PageBean pb = new PageBean();
 			pb.setCurrentPage(page);
-			pb.setPageSize(20);
+			pb.setPageSize(2);
 			pb.setTotalCount(backstageDao.selectPhoneCount());
 			pb.setTotalPage((int)(pb.getTotalCount()/20)+1);
 			map.put("pagebean",pb);

@@ -29,10 +29,11 @@
 
         <!--配置登录状态拦截器 暂不开启，方便开发-->
         <mvc:interceptor>
-        <mvc:mapping path="/**"/>
-        <!-- /register 和 /login 不需要拦截-->
-        <mvc:exclude-mapping path="/user/*"/>
-        <bean class="top.jianxiaopang.phone.interceptor.TokenInterceptor"></bean>
+            <mvc:mapping path="/backstage/**"/>
+            <!-- /register 和 /login 不需要拦截-->
+            <mvc:exclude-mapping path="/user/*"/>
+            <mvc:exclude-mapping path="/backstage/select*"/>
+            <bean class="top.jianxiaopang.phone.interceptor.TokenInterceptor"></bean>
         </mvc:interceptor>
     </mvc:interceptors>
 
