@@ -539,9 +539,9 @@ public class BackstageServiceImpl implements BackstageService {
 	}
 
 	@Override
-	public Result selectPhone(Integer page) {
+	public Result selectPhone(Integer page, String order) {
 		log.info("查询手机信息");
-		List<ReturnPhone> returnPhones = backstageDao.selectPhone(page);
+		List<ReturnPhone> returnPhones = backstageDao.selectPhone(page, order);
 		log.info("查询手机信息对应的关联信息");
 		for (ReturnPhone returnPhone : returnPhones) {
 			List<ReturnRelation> returnRelations = backstageDao.selectReturnRelation(returnPhone.getId());

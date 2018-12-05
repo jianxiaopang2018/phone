@@ -43,5 +43,9 @@ public class PortalController {
 		return portalService.selectPhoneByCategory(hashMap);
 	}
 
-
+	@ResponseBody
+	@RequestMapping(value = "/searchPhone")
+	public Result searchPhone(String keyWord) {
+		return portalService.searchPhone(keyWord);
+	}
 }

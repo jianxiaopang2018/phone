@@ -8,4 +8,6 @@ public interface PortalService {
 	public Result selectCpu();
 
 	public Result selectPhoneByCategory(HashMap hashMap);
+
+	public Result searchPhone(String keyWord);
 }

@@ -138,7 +138,7 @@ public interface BackstageDao {
 
 	public Integer updateRelation(Relation relation);
 
-	public List<ReturnPhone> selectPhone(@Param("page") Integer page);
+	public List<ReturnPhone> selectPhone(@Param("page") Integer page, @Param("order") String order);
 
 	public List<ReturnRelation> selectReturnRelation(Integer phoneId);
 

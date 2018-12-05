@@ -13,4 +13,6 @@ public interface PortalDao {
 	public List<Cpu> selectCpuByGrade(String grade);
 
 	public List<ReturnPhone> selectPhoneByCategory(@Param("hashMap")HashMap hashMap);
+
+	public List<ReturnPhone> searchPhone(@Param("keyWord")String keyWord);
 }

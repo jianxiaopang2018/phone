@@ -416,10 +416,10 @@ public class BackstageController {
 
 	@ResponseBody
 	@RequestMapping("/selectPhone")
-	private Result selectPhone(@RequestParam Integer page) {
+	private Result selectPhone(@RequestParam Integer page, @RequestParam String  order_by_price) {
 		log.info("——————进入查询手机的控制类——————");
 		log.info("接收参数为page="+page);
-		return backstageService.selectPhone(page);
+		return backstageService.selectPhone(page, order_by_price);
 	}
 
 	@ResponseBody

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="top.jianxiaopang.phone.dao.BackstageDao">
-    <insert id="insertBatteryCapacity" >
+    <insert id="insertBatteryCapacity">
         insert into battery_capacity (scope)
         values
             (#{scope})
@@ -398,26 +398,35 @@
     </update>
 
     <select id="selectPhone" resultType="top.jianxiaopang.phone.pojo.ReturnPhone">
-        SELECT p.screen_size_id as screenSizeId,p.battery_capacity_id as batteryCapacityId,p.id,p.name,b.name as brand,p.cpu as cpu,p.battery_capacity as batteryCapacity,
-               p.screen_size as screenSize,r.size as resolution,sm.name as screenMaterial,
-               p.front_camera as frontCamera,p.rear_camera as rearCamera,bm.name as bodyMaterial,
-               m.name as microusb,p.infrared,p.nfc,p.storage_extension as storageExtension,
-               p.quick_charge as quickCharge,p.screen_fingerprin as screenFingerprin,
-               p.wireless_charging as wirelessCharging,p.ois,p.image_url as imageUrl,p.detail_url as detailUrl
+        select * from (SELECT p.screen_size_id as screenSizeId,p.battery_capacity_id as
+        batteryCapacityId,p.id,p.name,b.name as brand,p.cpu as cpu,p.battery_capacity as batteryCapacity,
+        p.screen_size as screenSize,r.size as resolution,sm.name as screenMaterial,
+        p.front_camera as frontCamera,p.rear_camera as rearCamera,bm.name as bodyMaterial,
+        m.name as microusb,p.infrared,p.nfc,p.storage_extension as storageExtension,
+        p.quick_charge as quickCharge,p.screen_fingerprin as screenFingerprin,
+        p.wireless_charging as wirelessCharging,p.ois,p.image_url as imageUrl,p.detail_url as detailUrl,MIN(rl.price) as price
         FROM phone p
-        LEFT JOIN  brand b
-            ON p.brand_id=b.id
+        LEFT JOIN brand b
+        ON p.brand_id=b.id
         JOIN resolution r
-            ON p.resolution_id=r.id
+        ON p.resolution_id=r.id
         JOIN screen_material sm
-            ON p.screen_material_id=sm.id
+        ON p.screen_material_id=sm.id
         JOIN body_material bm
-            ON p.body_material_id=bm.id
+        ON p.body_material_id=bm.id
         JOIN microusb m
-            ON p.microusb_id=m.id
+        ON p.microusb_id=m.id
+        JOIN relation rl
+        ON p.id = rl.phone_id
+        GROUP BY p.id
+        <if test="order != null">
+            order by price ${order}
+        </if>
+        ) t
         <if test="page != null">
             limit ${(page-1)*2},2
         </if>
+
     </select>
 
     <select id="selectPhoneCount" resultType="java.lang.Integer">
@@ -436,7 +445,7 @@
     </select>
 
     <select id="selectPhoneById" resultType="top.jianxiaopang.phone.pojo.ReturnPhone">
-        SELECT p.screen_size_id as screenSizeId,p.battery_capacity_id as batteryCapacityId,p.id,p.name,b.name as brand,b.id as brandId,p.cpu as cpu,p.battery_capacity as batteryCapacity,
+        SELECT  p.screen_size_id as screenSizeId,p.battery_capacity_id as batteryCapacityId,p.id,p.name,b.name as brand,b.id as brandId,p.cpu as cpu,p.battery_capacity as batteryCapacity,
                p.screen_size as screenSize,r.size as resolution,r.id as resolutionId,sm.name as screenMaterial,sm.id as screenMaterialId,
                p.front_camera as frontCamera,p.rear_camera as rearCamera,bm.name as bodyMaterial,bm.id as bodyMaterialId,
                m.name as microusb,m.id as microusbId,p.infrared,p.nfc,p.storage_extension as storageExtension,
