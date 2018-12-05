@@ -9,4 +9,46 @@
     <select id="selectCpuByGrade" resultType="top.jianxiaopang.phone.pojo.Cpu">
         select id, name from cpu where grade = #{grade}
     </select>
+
+    <select id="selectPhoneByCategory" resultType="top.jianxiaopang.phone.pojo.ReturnPhone"
+            parameterType="java.util.HashMap">
+        SELECT p.screen_size_id as screenSizeId,p.battery_capacity_id as batteryCapacityId,p.id,p.name,b.name as
+        brand,b.id as brandId,p.cpu as cpu,p.battery_capacity as batteryCapacity,
+        p.screen_size as screenSize,r.size as resolution,r.id as resolutionId,sm.name as screenMaterial,sm.id as
+        screenMaterialId,
+        p.front_camera as frontCamera,p.rear_camera as rearCamera,bm.name as bodyMaterial,bm.id as bodyMaterialId,
+        m.name as microusb,m.id as microusbId,p.infrared,p.nfc,p.storage_extension as storageExtension,
+        p.quick_charge as quickCharge,p.screen_fingerprin as screenFingerprin,
+        p.wireless_charging as wirelessCharging,p.ois,p.image_url as imageUrl,p.detail_url as detailUrl
+        FROM phone p
+        LEFT JOIN brand b
+        ON p.brand_id=b.id
+        JOIN resolution r
+        ON p.resolution_id=r.id
+        JOIN screen_material sm
+        ON p.screen_material_id=sm.id
+        JOIN body_material bm
+        ON p.body_material_id=bm.id
+        JOIN microusb m
+        ON p.microusb_id=m.id
+        JOIN relation rl
+        ON p.id = rl.phone_id
+        where
+        <foreach collection="hashMap.keys" index="index" item="item" separator="and">
+            <foreach collection="hashMap[item]" index="index_list" item="item_item" separator="or" open="(" close=")">
+                <choose>
+                    <when test="item == 'front_camera' or item == 'rear_camera' or item == 'cpu'">
+                        p.${item} like '%${item_item}%'
+                    </when>
+                    <when test="item == 'ram_and_rom_id'">
+                        rl.${item} = #{item_item}
+                    </when>
+                    <otherwise>
+                        p.${item} = #{item_item}
+                    </otherwise>
+                </choose>
+            </foreach>
+        </foreach>
+    </select>
+
 </mapper>

@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10fce1ce-9ffa-4fa3-9722-28159456c232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/PortalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Other.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/PortalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/PortalServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/MainClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/PortalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/PortalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/BackstageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/BackstageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Other.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Other.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/BackstageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/BackstageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/ReturnPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/ReturnPhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/PortalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/PortalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/PortalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/PortalServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,23 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BackstageServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/BackstageServiceImpl.java">
+      <file leaf-file-name="PortalMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="55" column="25" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PortalServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/PortalServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-56">
+              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -64,8 +50,8 @@
       <file leaf-file-name="PortalController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/PortalController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+            <state relative-caret-position="448">
+              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,20 +59,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortalMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalMapper.xml">
+      <file leaf-file-name="Other.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Other.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BackstageMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/BackstageMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="97" column="70" selection-start-line="97" selection-start-column="67" selection-end-line="97" selection-end-column="70" />
+            <state relative-caret-position="252">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#495#496#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +77,8 @@
       <file leaf-file-name="PortalDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="40" />
+            <state relative-caret-position="252">
+              <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,38 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cpu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Cpu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="40" selection-start-column="40" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BackstageService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/BackstageService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3892">
-              <caret line="141" column="37" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PortalService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/PortalService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="728">
+              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -175,6 +131,7 @@
       <find>by</find>
       <find>cpu</find>
       <find>selectB</find>
+      <find>join</find>
     </findStrings>
     <replaceStrings>
       <replace>Integer</replace>
@@ -216,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/utils/JWT.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/interceptor/TokenInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/ReturnPhone.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/ReturnRelation.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/PageBean.java" />
@@ -226,15 +182,17 @@
         <option value="$PROJECT_DIR$/src/main/test/test.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/BackstageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Phone.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/BackstageMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Other.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/Portal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/PortalServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/Portal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/PortalController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/PortalService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/PortalServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Phone.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/ReturnPhone.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/BackstageMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Other.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/PortalController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
       </list>
     </option>
@@ -293,8 +251,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="560" />
-    <option name="y" value="60" />
+    <option name="x" value="50" />
+    <option name="y" value="40" />
     <option name="width" value="1860" />
     <option name="height" value="1030" />
   </component>
@@ -304,8 +262,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -524,25 +482,25 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="0" weight="0.32909605" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.13672923" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.08378016" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.27722773" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.31683168" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" x="945" y="205" width="346" height="449" id="Project" order="1" sideWeight="0.81329924" visible="true" weight="0.27345845" />
-      <window_info id="Web" order="0" sideWeight="0.18670076" side_tool="true" visible="true" weight="0.27345845" />
+      <window_info content_ui="combo" x="945" y="205" width="346" height="449" id="Project" order="1" sideWeight="0.80622345" visible="true" weight="0.21648793" />
+      <window_info id="Web" order="0" sideWeight="0.19377652" side_tool="true" visible="true" weight="0.21648793" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
       <window_info id="Structure" order="2" sideWeight="0.52899575" side_tool="true" weight="0.25670242" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.446959" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.29278642" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -569,7 +527,7 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -584,13 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/BatteryCapacity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -619,13 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Price.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -828,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/ReturnPhone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Relation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -842,30 +779,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Phone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/BackstageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="394" column="30" selection-start-line="394" selection-start-column="19" selection-end-line="394" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Other.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/BackstageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
+        <state>
           <caret line="55" column="25" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="25" />
         </state>
       </provider>
@@ -877,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/PortalService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Cpu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -891,44 +800,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/PortalService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/BackstageMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="97" column="70" selection-start-line="97" selection-start-column="67" selection-end-line="97" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/PortalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        <state relative-caret-position="252">
+          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/service/impl/PortalServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="112">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/BackstageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="21" column="69" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/BatteryCapacity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Phone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/ReturnPhone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Price.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/BackstageMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="242" column="13" lean-forward="true" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/pojo/Other.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/controller/PortalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -937,8 +891,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
+        <state relative-caret-position="728">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/jianxiaopang/phone/dao/PortalMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>

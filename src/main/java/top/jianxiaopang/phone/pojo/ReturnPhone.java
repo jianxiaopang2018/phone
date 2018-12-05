@@ -31,6 +31,24 @@ public class ReturnPhone {
 	private int screenMaterialId;
 	private int bodyMaterialId;
 	private int microusbId;
+	private int batteryCapacityId;
+	private int screenSizeId;
+
+	public int getScreenSizeId() {
+		return screenSizeId;
+	}
+
+	public void setScreenSizeId(int screenSizeId) {
+		this.screenSizeId = screenSizeId;
+	}
+
+	public int getBatteryCapacityId() {
+		return batteryCapacityId;
+	}
+
+	public void setBatteryCapacityId(int batteryCapacityId) {
+		this.batteryCapacityId = batteryCapacityId;
+	}
 
 	public int getBrandId() {
 		return brandId;

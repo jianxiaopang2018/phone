@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Other {
 	private List<BodyMaterial> bodyMaterials;
-	private List<BatteryCapacity> batteryCapacities;
+	private List<Microusb> microusbs;
 
 	public List<BodyMaterial> getBodyMaterials() {
 		return bodyMaterials;
@@ -14,11 +14,11 @@ public class Other {
 		this.bodyMaterials = bodyMaterials;
 	}
 
-	public List<BatteryCapacity> getBatteryCapacities() {
-		return batteryCapacities;
+	public List<Microusb> getMicrousbs() {
+		return microusbs;
 	}
 
-	public void setBatteryCapacities(List<BatteryCapacity> batteryCapacities) {
-		this.batteryCapacities = batteryCapacities;
+	public void setMicrousbs(List<Microusb> microusbs) {
+		this.microusbs = microusbs;
 	}
 }

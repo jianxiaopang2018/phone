@@ -25,6 +25,24 @@ public class Phone {
 	private String imageUrl;
 	private String detailUrl;
 	private List<Relation> relations;
+	private int batteryCapacityId;
+	private int screenSizeId;
+
+	public int getScreenSizeId() {
+		return screenSizeId;
+	}
+
+	public void setScreenSizeId(int screenSizeId) {
+		this.screenSizeId = screenSizeId;
+	}
+
+	public int getBatteryCapacityId() {
+		return batteryCapacityId;
+	}
+
+	public void setBatteryCapacityId(int batteryCapacityId) {
+		this.batteryCapacityId = batteryCapacityId;
+	}
 
 	public int getResolutionId() {
 		return resolutionId;

@@ -311,7 +311,9 @@
         wireless_charging,
         ois,
         image_url,
-        detail_url
+        detail_url,
+        battery_capacity_id,
+        p.screen_size_id
         )
         values
         (
@@ -334,7 +336,9 @@
         #{wirelessCharging},
         #{ois},
         #{imageUrl},
-        #{detailUrl}
+        #{detailUrl},
+        #{batteryCapacityId},
+        #{screenSizeId}
         )
     </insert>
 
@@ -382,6 +386,8 @@
         ois = #{ois},
         image_url = #{imageUrl},
         detail_url = #{detailUrl}
+        battery_capacity_id=#{batteryCapacityId},
+        screen_size_id = #{screenSizeId}
         where id = #{id}
     </update>
 
@@ -392,14 +398,14 @@
     </update>
 
     <select id="selectPhone" resultType="top.jianxiaopang.phone.pojo.ReturnPhone">
-        SELECT p.id,p.name,b.name as brand,p.cpu as cpu,p.battery_capacity as batteryCapacity,
+        SELECT p.screen_size_id as screenSizeId,p.battery_capacity_id as batteryCapacityId,p.id,p.name,b.name as brand,p.cpu as cpu,p.battery_capacity as batteryCapacity,
                p.screen_size as screenSize,r.size as resolution,sm.name as screenMaterial,
                p.front_camera as frontCamera,p.rear_camera as rearCamera,bm.name as bodyMaterial,
                m.name as microusb,p.infrared,p.nfc,p.storage_extension as storageExtension,
                p.quick_charge as quickCharge,p.screen_fingerprin as screenFingerprin,
                p.wireless_charging as wirelessCharging,p.ois,p.image_url as imageUrl,p.detail_url as detailUrl
         FROM phone p
-        JOIN  brand b
+        LEFT JOIN  brand b
             ON p.brand_id=b.id
         JOIN resolution r
             ON p.resolution_id=r.id
@@ -417,7 +423,7 @@
     <select id="selectPhoneCount" resultType="java.lang.Integer">
         SELECT count(*)
         FROM phone p
-        JOIN  brand b
+        LEFT JOIN  brand b
             ON p.brand_id=b.id
         JOIN resolution r
             ON p.resolution_id=r.id
@@ -430,14 +436,14 @@
     </select>
 
     <select id="selectPhoneById" resultType="top.jianxiaopang.phone.pojo.ReturnPhone">
-        SELECT p.id,p.name,b.name as brand,b.id as brandId,p.cpu as cpu,p.battery_capacity as batteryCapacity,
+        SELECT p.screen_size_id as screenSizeId,p.battery_capacity_id as batteryCapacityId,p.id,p.name,b.name as brand,b.id as brandId,p.cpu as cpu,p.battery_capacity as batteryCapacity,
                p.screen_size as screenSize,r.size as resolution,r.id as resolutionId,sm.name as screenMaterial,sm.id as screenMaterialId,
                p.front_camera as frontCamera,p.rear_camera as rearCamera,bm.name as bodyMaterial,bm.id as bodyMaterialId,
                m.name as microusb,m.id as microusbId,p.infrared,p.nfc,p.storage_extension as storageExtension,
                p.quick_charge as quickCharge,p.screen_fingerprin as screenFingerprin,
                p.wireless_charging as wirelessCharging,p.ois,p.image_url as imageUrl,p.detail_url as detailUrl
         FROM phone p
-        JOIN  brand b
+        LEFT JOIN  brand b
             ON p.brand_id=b.id
         JOIN resolution r
             ON p.resolution_id=r.id

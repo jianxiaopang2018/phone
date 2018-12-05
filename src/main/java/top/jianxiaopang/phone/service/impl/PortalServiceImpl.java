@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import top.jianxiaopang.phone.dao.PortalDao;
 import top.jianxiaopang.phone.pojo.Result;
+import top.jianxiaopang.phone.pojo.ReturnPhone;
 import top.jianxiaopang.phone.service.PortalService;
 
 import java.util.HashMap;
@@ -23,5 +24,11 @@ public class PortalServiceImpl implements PortalService {
 			map.put(grade, portalDao.selectCpuByGrade(grade));
 		}
 		return Result.success(map);
+	}
+
+	@Override
+	public Result selectPhoneByCategory(HashMap hashMap) {
+		List<ReturnPhone> returnPhones = portalDao.selectPhoneByCategory(hashMap);
+		return Result.success(returnPhones);
 	}
 }
