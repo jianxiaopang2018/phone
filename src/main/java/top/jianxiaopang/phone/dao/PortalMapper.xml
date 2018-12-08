@@ -84,4 +84,29 @@
         where p.name = '%${key}%' or b.name='%${key}%'
         GROUP BY p.id
     </select>
+
+    <select id="selectFrontCamera" resultType="top.jianxiaopang.phone.pojo.Common">
+        select id, size as name
+        from front_camera
+    </select>
+
+    <select id="selectRearCamera" resultType="top.jianxiaopang.phone.pojo.Common">
+        select id, size as name
+        from rear_camera
+    </select>
+
+    <select id="selectScreenMaterial" resultType="top.jianxiaopang.phone.pojo.Common">
+        select id, name
+        from screen_material
+    </select>
+
+    <select id="selectScreenSize" resultType="top.jianxiaopang.phone.pojo.Common">
+        select id, scope as name
+        from screen_size
+    </select>
+
+    <select id="selectResolution" resultType="top.jianxiaopang.phone.pojo.Common">
+        select id, size as name
+        from resolution
+    </select>
 </mapper>

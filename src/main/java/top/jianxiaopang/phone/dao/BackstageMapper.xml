@@ -313,7 +313,7 @@
         image_url,
         detail_url,
         battery_capacity_id,
-        p.screen_size_id
+        screen_size_id
         )
         values
         (
@@ -385,7 +385,7 @@
         wireless_charging = #{wirelessCharging},
         ois = #{ois},
         image_url = #{imageUrl},
-        detail_url = #{detailUrl}
+        detail_url = #{detailUrl},
         battery_capacity_id=#{batteryCapacityId},
         screen_size_id = #{screenSizeId}
         where id = #{id}

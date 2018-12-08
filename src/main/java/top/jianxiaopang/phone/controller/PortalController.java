@@ -7,12 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import top.jianxiaopang.phone.dao.BackstageDao;
-import top.jianxiaopang.phone.pojo.Other;
+import top.jianxiaopang.phone.dao.PortalDao;
+import top.jianxiaopang.phone.pojo.Common;
 import top.jianxiaopang.phone.pojo.Result;
-import top.jianxiaopang.phone.service.BackstageService;
 import top.jianxiaopang.phone.service.PortalService;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Controller()
 @RequestMapping("/portal")
@@ -21,14 +23,16 @@ public class PortalController {
 	private BackstageDao backstageDao;
 	@Autowired
 	private PortalService portalService;
+	@Autowired
+	private PortalDao portalDao;
 
 	@ResponseBody
 	@RequestMapping(value = "/other", method = RequestMethod.GET)
 	public Result selectOther() {
-		Other other = new Other();
-		other.setMicrousbs(backstageDao.selectMicrousb());
-		other.setBodyMaterials(backstageDao.selectBodyMaterial());
-		return Result.success(other);
+		Map<String, List> map = new HashMap<>();
+		map.put("机身材质", backstageDao.selectBodyMaterial());
+		map.put("充电接口", backstageDao.selectMicrousb());
+		return Result.success(map);
 	}
 
 	@ResponseBody
@@ -47,5 +51,24 @@ public class PortalController {
 	@RequestMapping(value = "/searchPhone")
 	public Result searchPhone(String keyWord) {
 		return portalService.searchPhone(keyWord);
+	}
+
+	@ResponseBody
+	@RequestMapping(value = "/camera", method = RequestMethod.GET)
+	public Result selectCamera() {
+		HashMap<String, List<Common>> map = new HashMap();
+		map.put("前置", portalDao.selectFrontCamera());
+		map.put("后置", portalDao.selectRearCamera());
+		return Result.success(map);
+	}
+
+	@ResponseBody
+	@RequestMapping(value = "/screen", method = RequestMethod.GET)
+	public Result selectScreen() {
+		HashMap<String, List<Common>> map = new HashMap();
+		map.put("尺寸", portalDao.selectScreenSize());
+		map.put("分辨率", portalDao.selectResolution());
+		map.put("材质", portalDao.selectScreenMaterial());
+		return Result.success(map);
 	}
 }
